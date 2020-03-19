@@ -29,7 +29,7 @@ end
 def select_series_title_with_most_human_characters
   "SELECT series.title 
     FROM series
-    JOIN books
+    JOIN books, 
     WHERE series.id = books.series_id"
 end
 
